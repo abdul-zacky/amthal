@@ -23,10 +23,10 @@ const menuItems = [
   },
   {
     name: '3D City Modelling',
-    href: '/3d-city',
+    href: '/3d-city-modelling',
     icon: Building2,
-    description: 'AR visualization',
-    available: false,
+    description: '3D visualization',
+    available: true,
   },
   {
     name: 'AI Demand Prediction',
