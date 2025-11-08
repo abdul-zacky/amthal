@@ -40,7 +40,7 @@ const menuItems = [
     href: '/geospatial',
     icon: Map,
     description: 'Multi-objective',
-    available: false,
+    available: true,
   },
   {
     name: 'AI Chatbot',
