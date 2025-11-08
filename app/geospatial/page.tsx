@@ -253,7 +253,7 @@ export default function GeospatialPage() {
             Geospatial Optimizer
           </h1>
           <p className="text-gray-700 text-lg">
-            Multi-objective optimization untuk penempatan stasiun charging optimal
+            Multi-objective optimization for optimal charging station placement
           </p>
         </div>
 
@@ -744,19 +744,19 @@ export default function GeospatialPage() {
               <div className="space-y-3 text-sm text-gray-700">
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
-                  <p><span className="font-semibold">Top 3 Locations:</span> Prince Mohammed Road, Quba District, King Fahd Road dengan total coverage 273km²</p>
+                  <p><span className="font-semibold">Top 3 Locations:</span> Prince Mohammed Road, Quba District, King Fahd Road with total coverage 273km²</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
-                  <p><span className="font-semibold">Expected Impact:</span> Melayani 89% populasi Al-Madinah dengan 42.5 MW total capacity</p>
+                  <p><span className="font-semibold">Expected Impact:</span> Serving 89% of Al-Madinah population with 42.5 MW total capacity</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
-                  <p><span className="font-semibold">Investment Required:</span> 3.8M SAR dengan projected ROI dalam 2.3 tahun</p>
+                  <p><span className="font-semibold">Investment Required:</span> 3.8M SAR with projected ROI in 2.3 years</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
-                  <p><span className="font-semibold">Equity Score:</span> 8.4/10 menunjukkan distribusi yang adil across all districts</p>
+                  <p><span className="font-semibold">Equity Score:</span> 8.4/10 showing fair distribution across all districts</p>
                 </div>
               </div>
             </div>

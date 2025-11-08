@@ -14,16 +14,16 @@ interface Message {
 
 const mockConversations = [
   {
-    userMessage: "Dimana lokasi terbaik untuk menempatkan stasiun charging di area ini?",
-    botResponse: "Berdasarkan analisis peta Al-Madinah, saya merekomendasikan 3 lokasi optimal:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - Area dengan traffic tinggi dan dekat dengan pusat kota, coverage radius 5km dapat melayani 85,000 penduduk.\n\n2. **Quba District** - Zona strategis dekat masjid Quba dengan kepadatan kendaraan tinggi, cocok untuk DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Akses mudah dari highway, ideal untuk Ultra-Fast Charger melayani perjalanan jarak jauh.\n\nApakah Anda ingin saya jelaskan detail teknis untuk salah satu lokasi?"
+    userMessage: "Where is the best location to place charging stations in this area?",
+    botResponse: "Based on Al-Madinah map analysis, I recommend 3 optimal locations:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - High traffic area near city center, 5km coverage radius can serve 85,000 residents.\n\n2. **Quba District** - Strategic zone near Quba Mosque with high vehicle density, suitable for DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Easy access from highway, ideal for Ultra-Fast Charger serving long-distance travel.\n\nWould you like me to explain technical details for any of these locations?"
   },
   {
-    userMessage: "Berapa coverage area yang bisa dicapai di lokasi Prince Mohammed Bin Abdulaziz Road?",
-    botResponse: "Untuk lokasi **Prince Mohammed Bin Abdulaziz Road**, coverage area yang dapat dicapai:\n\n📍 **Coverage Details:**\n- Radius: 5 km\n- Populasi terlayani: ~85,000 orang\n- Jumlah kendaraan EV potensial: 2,400 unit\n- Waktu charging rata-rata: 30-45 menit (DC Fast)\n\n📊 **Demographics:**\n- Tipe area: Mixed commercial-residential\n- Income level: Medium-high\n- EV adoption probability: 73%\n\n⚡ **Rekomendasi Charger:**\n- 4x DC Fast Chargers (50kW)\n- 2x Ultra-Fast Chargers (150kW)\n- 1x Solar Canopy (20kW capacity)\n\nLokasi ini mendapat skor 8.9/10 untuk optimal placement."
+    userMessage: "What coverage area can be achieved at Prince Mohammed Bin Abdulaziz Road location?",
+    botResponse: "For **Prince Mohammed Bin Abdulaziz Road** location, achievable coverage area:\n\n📍 **Coverage Details:**\n- Radius: 5 km\n- Population served: ~85,000 people\n- Potential EV vehicles: 2,400 units\n- Average charging time: 30-45 minutes (DC Fast)\n\n📊 **Demographics:**\n- Area type: Mixed commercial-residential\n- Income level: Medium-high\n- EV adoption probability: 73%\n\n⚡ **Charger Recommendation:**\n- 4x DC Fast Chargers (50kW)\n- 2x Ultra-Fast Chargers (150kW)\n- 1x Solar Canopy (20kW capacity)\n\nThis location scores 8.9/10 for optimal placement."
   },
   {
-    userMessage: "Bandingkan dengan lokasi Quba District",
-    botResponse: "Perbandingan **Prince Mohammed Road** vs **Quba District**:\n\n| Metric | Prince Mohammed | Quba District |\n|--------|----------------|---------------|\n| Coverage | 5 km | 4.2 km |\n| Population | 85,000 | 62,000 |\n| Traffic Score | 8.9/10 | 7.8/10 |\n| Cost | 850K SAR | 620K SAR |\n| ROI Period | 2.1 years | 2.8 years |\n| Religious Tourism | Medium | Very High |\n\n**Kesimpulan:**\n- Prince Mohammed: Lebih baik untuk daily commuters\n- Quba: Lebih strategis untuk religious tourism peak seasons\n\nRekomendasi: Deploy keduanya untuk maximum coverage!"
+    userMessage: "Compare with Quba District location",
+    botResponse: "Comparison **Prince Mohammed Road** vs **Quba District**:\n\n| Metric | Prince Mohammed | Quba District |\n|--------|----------------|---------------|\n| Coverage | 5 km | 4.2 km |\n| Population | 85,000 | 62,000 |\n| Traffic Score | 8.9/10 | 7.8/10 |\n| Cost | 850K SAR | 620K SAR |\n| ROI Period | 2.1 years | 2.8 years |\n| Religious Tourism | Medium | Very High |\n\n**Conclusion:**\n- Prince Mohammed: Better for daily commuters\n- Quba: More strategic for religious tourism peak seasons\n\nRecommendation: Deploy both for maximum coverage!"
   }
 ];
 
@@ -32,7 +32,7 @@ export default function ChatbotPage() {
     {
       id: 1,
       type: 'bot',
-      content: 'Halo! Saya AI Assistant AMTHAL. Saya dapat membantu Anda menganalisis peta Al-Madinah dan merekomendasikan lokasi optimal untuk stasiun charging EV. Apa yang ingin Anda ketahui?',
+      content: 'Hello! I am AMTHAL AI Assistant. I can help you analyze Al-Madinah map and recommend optimal locations for EV charging stations. What would you like to know?',
       timestamp: new Date(),
     }
   ]);
@@ -111,10 +111,10 @@ export default function ChatbotPage() {
   };
 
   const quickQuestions = [
-    "Dimana lokasi terbaik untuk stasiun charging?",
-    "Berapa coverage area di area ini?",
-    "Bandingkan 2 lokasi berbeda",
-    "Analisis equity score untuk area ini",
+    "Where is the best location for charging stations?",
+    "What is the coverage area in this region?",
+    "Compare 2 different locations",
+    "Analyze equity score for this area",
   ];
 
   return (
@@ -136,7 +136,7 @@ export default function ChatbotPage() {
             AI Chatbot Assistant
           </h1>
           <p className="text-gray-700 text-lg">
-            Tanyakan apa saja tentang lokasi optimal untuk stasiun charging EV di Al-Madinah
+            Ask anything about optimal locations for EV charging stations in Al-Madinah
           </p>
         </div>
 
@@ -225,7 +225,7 @@ export default function ChatbotPage() {
                         <div className="bg-white/60 backdrop-blur-md rounded-2xl px-4 py-3 shadow-md border border-white/40">
                           <div className="flex items-center gap-2">
                             <Loader2 className="w-4 h-4 text-[#276FB0] animate-spin" />
-                            <span className="text-sm text-gray-600">AI sedang berpikir...</span>
+                            <span className="text-sm text-gray-600">AI is thinking...</span>
                             <div className="flex gap-1">
                               <span className="w-2 h-2 bg-[#276FB0] rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
                               <span className="w-2 h-2 bg-[#276FB0] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
@@ -279,7 +279,7 @@ export default function ChatbotPage() {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Tanyakan tentang lokasi charging stations..."
+                  placeholder="Ask about charging station locations..."
                   disabled={isTyping}
                   className="flex-1 bg-white/60 backdrop-blur-md border border-white/40 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#276FB0] focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed text-gray-800 placeholder-gray-500"
                 />

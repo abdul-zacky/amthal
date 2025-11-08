@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import { Globe, Scale, DollarSign, Lightbulb, Star } from 'lucide-react';
 
-// Dummy data untuk tiga skenario
+// Dummy data for three scenarios
 const scenarios = {
   maxCoverage: {
     name: 'Maximum Coverage',
-    description: 'Prioritas jangkauan luas untuk melayani lebih banyak area',
+    description: 'Priority on wide coverage to serve more areas',
     color: 'bg-[#276FB0]',
     borderColor: 'border-[#276FB0]',
     metrics: {
@@ -32,7 +32,7 @@ const scenarios = {
   },
   equityFocus: {
     name: 'Equity Focus',
-    description: 'Prioritas pemerataan layanan untuk semua distrik',
+    description: 'Priority on equal service distribution across all districts',
     color: 'bg-[#134474]',
     borderColor: 'border-[#134474]',
     metrics: {
@@ -57,7 +57,7 @@ const scenarios = {
   },
   costOptimization: {
     name: 'Cost Optimization',
-    description: 'Efisiensi biaya dengan ROI maksimal',
+    description: 'Cost efficiency with maximum ROI',
     color: 'bg-[#0D263F]',
     borderColor: 'border-[#0D263F]',
     metrics: {
