@@ -15,7 +15,7 @@ interface Message {
 const mockConversations = [
   {
     userMessage: "Dimana lokasi terbaik untuk menempatkan stasiun charging di area ini?",
-    botResponse: "Berdasarkan analisis peta Al-Madinah, saya merekomendasikan 3 lokasi optimal:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - Area dengan traffic tinggi dan dekat dengan pusat kota, coverage radius 5km dapat melayani 85,000 penduduk.\n\n2. **Quba District** - Zona strategis dekat masjid Quba dengan kepadatan kendaraan tinggi, cocok untuk DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Akses mudah dari highway, ideal untuk Ultra-Fast Charger melayani perjalanan jarak jauh.\n\nApakah Anda ingin saya jelaskan detail teknis untuk salah satu lokasi?"
+    botResponse: "Berdasarkan analisis peta Manhattan, saya merekomendasikan 3 lokasi optimal:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - Area dengan traffic tinggi dan dekat dengan pusat kota, coverage radius 5km dapat melayani 85,000 penduduk.\n\n2. **Quba District** - Zona strategis dekat masjid Quba dengan kepadatan kendaraan tinggi, cocok untuk DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Akses mudah dari highway, ideal untuk Ultra-Fast Charger melayani perjalanan jarak jauh.\n\nApakah Anda ingin saya jelaskan detail teknis untuk setiap lokasi?"
   },
   {
     userMessage: "Berapa coverage area yang bisa dicapai di lokasi Prince Mohammed Bin Abdulaziz Road?",
@@ -32,7 +32,7 @@ export default function ChatbotPage() {
     {
       id: 1,
       type: 'bot',
-      content: 'Halo! Saya AI Assistant AMTHAL. Saya dapat membantu Anda menganalisis peta Al-Madinah dan merekomendasikan lokasi optimal untuk stasiun charging EV. Apa yang ingin Anda ketahui?',
+      content: 'Halo! Saya AI Assistant AMTHAL. Saya dapat membantu Anda menganalisis peta Manhattan dan merekomendasikan lokasi optimal untuk stasiun charging EV. Apa yang ingin Anda ketahui?',
       timestamp: new Date(),
     }
   ]);
@@ -136,7 +136,7 @@ export default function ChatbotPage() {
             AI Chatbot Assistant
           </h1>
           <p className="text-gray-700 text-lg">
-            Tanyakan apa saja tentang lokasi optimal untuk stasiun charging EV di Al-Madinah
+            Tanyakan apa saja tentang lokasi optimal untuk stasiun charging EV di Manhattan
           </p>
         </div>
 
@@ -146,13 +146,13 @@ export default function ChatbotPage() {
           <div className="relative bg-white/70 backdrop-blur-xl rounded-2xl border border-white/40 shadow-2xl overflow-hidden">
             <div className="absolute top-4 left-4 z-10 bg-white/80 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
               <MapPin className="w-5 h-5 text-[#276FB0]" />
-              <span className="font-semibold text-gray-700">Al-Madinah Region</span>
+              <span className="font-semibold text-gray-700">Manhattan Region</span>
             </div>
             
             <div className="relative w-full h-full">
               <Image
                 src="/assets/maps2.jpeg"
-                alt="Al-Madinah Map"
+                alt="Manhattan Map"
                 fill
                 className="object-cover"
                 priority

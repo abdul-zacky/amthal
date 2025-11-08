@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AMTHAL - AI-Powered EV Charging Infrastructure Platform",
-  description: "Smart EV charging infrastructure planning for Al-Madinah Smart City Initiative",
+  description: "Smart EV charging infrastructure planning for Manhattan Smart City Initiative",
 };
 
 export default function RootLayout({
