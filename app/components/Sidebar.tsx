@@ -30,10 +30,10 @@ const menuItems = [
   },
   {
     name: 'AI Demand Prediction',
-    href: '/ai-prediction',
+    href: '/demand-prediction',
     icon: Brain,
     description: 'ML forecasting',
-    available: false,
+    available: true,
   },
   {
     name: 'Geospatial Optimizer',
