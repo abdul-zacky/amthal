@@ -54,7 +54,7 @@ const menuItems = [
     href: '/analytics',
     icon: LineChart,
     description: 'Real-time KPI',
-    available: false,
+    available: true,
   },
 ];
 
