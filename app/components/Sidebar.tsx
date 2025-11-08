@@ -47,7 +47,7 @@ const menuItems = [
     href: '/chatbot',
     icon: MessageSquare,
     description: 'NL assistant',
-    available: false,
+    available: true,
   },
   {
     name: 'Analytics Dashboard',
