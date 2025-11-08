@@ -14,8 +14,13 @@ interface Message {
 
 const mockConversations = [
   {
+<<<<<<< HEAD
     userMessage: "Where is the best location to place charging stations in this area?",
     botResponse: "Based on Al-Madinah map analysis, I recommend 3 optimal locations:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - High traffic area near city center, 5km coverage radius can serve 85,000 residents.\n\n2. **Quba District** - Strategic zone near Quba Mosque with high vehicle density, suitable for DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Easy access from highway, ideal for Ultra-Fast Charger serving long-distance travel.\n\nWould you like me to explain technical details for any of these locations?"
+=======
+    userMessage: "Dimana lokasi terbaik untuk menempatkan stasiun charging di area ini?",
+    botResponse: "Berdasarkan analisis peta Manhattan, saya merekomendasikan 3 lokasi optimal:\n\n1. **Prince Mohammed Bin Abdulaziz Road** - Area dengan traffic tinggi dan dekat dengan pusat kota, coverage radius 5km dapat melayani 85,000 penduduk.\n\n2. **Quba District** - Zona strategis dekat masjid Quba dengan kepadatan kendaraan tinggi, cocok untuk DC Fast Charger.\n\n3. **King Fahd Road Corridor** - Akses mudah dari highway, ideal untuk Ultra-Fast Charger melayani perjalanan jarak jauh.\n\nApakah Anda ingin saya jelaskan detail teknis untuk setiap lokasi?"
+>>>>>>> f72fb3554deb6dee2f7f779b6e1a724609edd383
   },
   {
     userMessage: "What coverage area can be achieved at Prince Mohammed Bin Abdulaziz Road location?",
@@ -32,7 +37,11 @@ export default function ChatbotPage() {
     {
       id: 1,
       type: 'bot',
+<<<<<<< HEAD
       content: 'Hello! I am AMTHAL AI Assistant. I can help you analyze Al-Madinah map and recommend optimal locations for EV charging stations. What would you like to know?',
+=======
+      content: 'Halo! Saya AI Assistant AMTHAL. Saya dapat membantu Anda menganalisis peta Manhattan dan merekomendasikan lokasi optimal untuk stasiun charging EV. Apa yang ingin Anda ketahui?',
+>>>>>>> f72fb3554deb6dee2f7f779b6e1a724609edd383
       timestamp: new Date(),
     }
   ]);
@@ -136,7 +145,11 @@ export default function ChatbotPage() {
             AI Chatbot Assistant
           </h1>
           <p className="text-gray-700 text-lg">
+<<<<<<< HEAD
             Ask anything about optimal locations for EV charging stations in Al-Madinah
+=======
+            Tanyakan apa saja tentang lokasi optimal untuk stasiun charging EV di Manhattan
+>>>>>>> f72fb3554deb6dee2f7f779b6e1a724609edd383
           </p>
         </div>
 
@@ -146,13 +159,13 @@ export default function ChatbotPage() {
           <div className="relative bg-white/70 backdrop-blur-xl rounded-2xl border border-white/40 shadow-2xl overflow-hidden">
             <div className="absolute top-4 left-4 z-10 bg-white/80 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
               <MapPin className="w-5 h-5 text-[#276FB0]" />
-              <span className="font-semibold text-gray-700">Al-Madinah Region</span>
+              <span className="font-semibold text-gray-700">Manhattan Region</span>
             </div>
             
             <div className="relative w-full h-full">
               <Image
                 src="/assets/maps2.jpeg"
-                alt="Al-Madinah Map"
+                alt="Manhattan Map"
                 fill
                 className="object-cover"
                 priority

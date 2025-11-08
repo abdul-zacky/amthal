@@ -37,7 +37,7 @@ export default function Home() {
             AI-Powered EV Charging Infrastructure Platform
           </p>
           <p className="text-lg text-gray-600">
-            Al-Madinah Smart City Initiative
+            Manhattan Smart City Initiative
           </p>
         </div>
 

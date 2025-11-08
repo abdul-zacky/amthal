@@ -102,7 +102,7 @@ export default function AnalyticsPage() {
 
   // Mock data for regional coverage
   const regionalData = [
-    { region: 'Central Madinah', coverage: 92, stations: 12, users: 5420 },
+    { region: 'Central Manhattan', coverage: 92, stations: 12, users: 5420 },
     { region: 'Quba Area', coverage: 85, stations: 8, users: 3890 },
     { region: 'Northern District', coverage: 78, stations: 6, users: 2840 },
     { region: 'Eastern Zone', coverage: 71, stations: 5, users: 2180 },
@@ -368,7 +368,7 @@ export default function AnalyticsPage() {
               <TrendingUp className="w-5 h-5 text-[#276FB0]" />
               Regional Coverage Analysis
             </h3>
-            <p className="text-sm text-gray-600 mt-1">Infrastructure distribution across Al-Madinah</p>
+            <p className="text-sm text-gray-600 mt-1">Infrastructure distribution across Manhattan</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">

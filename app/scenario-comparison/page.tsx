@@ -23,7 +23,7 @@ const scenarios = {
       populationServed: 850000,
     },
     locations: [
-      'Al-Madinah City Center',
+      'Manhattan City Center',
       'Prince Mohammed Bin Abdulaziz Road',
       'King Fahd Road Corridor',
       'Al-Aziziyah District',
@@ -75,7 +75,7 @@ const scenarios = {
     locations: [
       'Al-Haram Road (High Traffic)',
       'Taibah University Zone',
-      'Industrial Area Al-Madinah',
+      'Industrial Area Manhattan',
       'Quba Mosque Area',
       'Al-Masjid an-Nabawi Perimeter',
     ],
@@ -126,7 +126,7 @@ export default function ScenarioComparison() {
           Scenario Comparison Tool
         </h1>
         <p className="text-gray-700 text-lg">
-          Bandingkan tiga strategi pengembangan jaringan stasiun charging EV di Al-Madinah
+          Bandingkan tiga strategi pengembangan jaringan stasiun charging EV di Manhattan
         </p>
       </div>
 
