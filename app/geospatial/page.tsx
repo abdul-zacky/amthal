@@ -399,7 +399,7 @@ export default function GeospatialPage() {
             {/* Map Header */}
             <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
               <Map className="w-5 h-5 text-[#276FB0]" />
-              <span className="font-semibold text-gray-700">Al-Madinah Region</span>
+              <span className="font-semibold text-gray-700">Manhattan Region</span>
             </div>
 
             {/* Status Badge */}
@@ -420,7 +420,7 @@ export default function GeospatialPage() {
             <div className="relative w-full h-full">
               <Image
                 src="/assets/maps2.jpeg"
-                alt="Al-Madinah Map"
+                alt="Manhattan Map"
                 fill
                 className="object-cover"
                 priority
@@ -748,7 +748,7 @@ export default function GeospatialPage() {
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
-                  <p><span className="font-semibold">Expected Impact:</span> Serving 89% of Al-Madinah population with 42.5 MW total capacity</p>
+                  <p><span className="font-semibold">Expected Impact:</span> Serving 89% of Manhattan population with 42.5 MW total capacity</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-[#276FB0] rounded-full mt-2"></div>
