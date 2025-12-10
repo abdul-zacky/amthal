@@ -67,85 +67,130 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* 3D City Modelling (Coming Soon) */}
-          <div className="relative bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mb-4 flex items-center justify-center shadow-md">
-              <Building2 className="w-8 h-8 text-gray-500" />
+          {/* 3D City Modelling */}
+          <Link
+            href="/3d-city-modelling"
+            className="group relative overflow-hidden bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/20 hover:border-[#276FB0]/50 transition-all hover:shadow-2xl hover:shadow-[#276FB0]/30 hover:-translate-y-1"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#276FB0]/10 to-[#134474]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#276FB0] to-[#134474] rounded-xl mb-4 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <Building2 className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#0D263F] group-hover:text-[#276FB0] transition-colors">
+                3D City Modelling
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Visualisasi 3D kota dengan AR, simulasi aliran kendaraan, dan shadow analysis
+              </p>
+              <div className="flex items-center text-[#276FB0] font-semibold">
+                Open Tool
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-400">
-              3D City Modelling
-            </h3>
-            <p className="text-gray-500 mb-4">
-              Visualisasi 3D kota dengan AR, simulasi aliran kendaraan, dan shadow analysis
-            </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-white/60 backdrop-blur-sm text-gray-400 font-semibold text-xs">
-              Coming Soon
-            </div>
-          </div>
+          </Link>
 
-          {/* AI Demand Prediction (Coming Soon) */}
-          <div className="relative bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mb-4 flex items-center justify-center shadow-md">
-              <Brain className="w-8 h-8 text-gray-500" />
+          {/* AI Demand Prediction */}
+          <Link
+            href="/demand-prediction"
+            className="group relative overflow-hidden bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/20 hover:border-[#276FB0]/50 transition-all hover:shadow-2xl hover:shadow-[#276FB0]/30 hover:-translate-y-1"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#276FB0]/10 to-[#134474]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#276FB0] to-[#134474] rounded-xl mb-4 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <Brain className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#0D263F] group-hover:text-[#276FB0] transition-colors">
+                AI Demand Prediction
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Model adopsi EV per distrik dengan machine learning dan heatmap visualization
+              </p>
+              <div className="flex items-center text-[#276FB0] font-semibold">
+                Open Tool
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-400">
-              AI Demand Prediction
-            </h3>
-            <p className="text-gray-500 mb-4">
-              Model adopsi EV per distrik dengan machine learning dan heatmap visualization
-            </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-white/60 backdrop-blur-sm text-gray-400 font-semibold text-xs">
-              Coming Soon
-            </div>
-          </div>
+          </Link>
 
-          {/* Geospatial Optimization (Coming Soon) */}
-          <div className="relative bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mb-4 flex items-center justify-center shadow-md">
-              <Map className="w-8 h-8 text-gray-500" />
+          {/* Geospatial Optimizer */}
+          <Link
+            href="/geospatial"
+            className="group relative overflow-hidden bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/20 hover:border-[#276FB0]/50 transition-all hover:shadow-2xl hover:shadow-[#276FB0]/30 hover:-translate-y-1"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#276FB0]/10 to-[#134474]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#276FB0] to-[#134474] rounded-xl mb-4 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <Map className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#0D263F] group-hover:text-[#276FB0] transition-colors">
+                Geospatial Optimizer
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Peta interaktif dengan mesin optimasi multi-objektif untuk rekomendasi lokasi optimal
+              </p>
+              <div className="flex items-center text-[#276FB0] font-semibold">
+                Open Tool
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-400">
-              Geospatial Optimizer
-            </h3>
-            <p className="text-gray-500 mb-4">
-              Peta interaktif dengan mesin optimasi multi-objektif untuk rekomendasi lokasi optimal
-            </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-white/60 backdrop-blur-sm text-gray-400 font-semibold text-xs">
-              Coming Soon
-            </div>
-          </div>
+          </Link>
 
-          {/* Gemini AI Chatbot (Coming Soon) */}
-          <div className="relative bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mb-4 flex items-center justify-center shadow-md">
-              <MessageSquare className="w-8 h-8 text-gray-500" />
+          {/* Gemini AI Chatbot */}
+          <Link
+            href="/chatbot"
+            className="group relative overflow-hidden bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/20 hover:border-[#276FB0]/50 transition-all hover:shadow-2xl hover:shadow-[#276FB0]/30 hover:-translate-y-1"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#276FB0]/10 to-[#134474]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#276FB0] to-[#134474] rounded-xl mb-4 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <MessageSquare className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#0D263F] group-hover:text-[#276FB0] transition-colors">
+                Gemini AI Chatbot
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Tanya jawab natural language untuk analisis coverage, rekomendasi, dan ringkasan eksekutif
+              </p>
+              <div className="flex items-center text-[#276FB0] font-semibold">
+                Open Tool
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-400">
-              Gemini AI Chatbot
-            </h3>
-            <p className="text-gray-500 mb-4">
-              Tanya jawab natural language untuk analisis coverage, rekomendasi, dan ringkasan eksekutif
-            </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-white/60 backdrop-blur-sm text-gray-400 font-semibold text-xs">
-              Coming Soon
-            </div>
-          </div>
+          </Link>
 
-          {/* Dashboard Overview (Coming Soon) */}
-          <div className="relative bg-white/40 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mb-4 flex items-center justify-center shadow-md">
-              <LineChart className="w-8 h-8 text-gray-500" />
+          {/* Analytics Dashboard */}
+          <Link
+            href="/analytics"
+            className="group relative overflow-hidden bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/20 hover:border-[#276FB0]/50 transition-all hover:shadow-2xl hover:shadow-[#276FB0]/30 hover:-translate-y-1"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#276FB0]/10 to-[#134474]/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#276FB0] to-[#134474] rounded-xl mb-4 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                <LineChart className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#0D263F] group-hover:text-[#276FB0] transition-colors">
+                Analytics Dashboard
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Real-time monitoring, KPI tracking, dan comprehensive reporting system
+              </p>
+              <div className="flex items-center text-[#276FB0] font-semibold">
+                Open Tool
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-gray-400">
-              Analytics Dashboard
-            </h3>
-            <p className="text-gray-500 mb-4">
-              Real-time monitoring, KPI tracking, dan comprehensive reporting system
-            </p>
-            <div className="inline-block px-3 py-1 rounded-full bg-white/60 backdrop-blur-sm text-gray-400 font-semibold text-xs">
-              Coming Soon
-            </div>
-          </div>
+          </Link>
         </div>
 
         <div className="mt-16 text-center">
